@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #e8f5e9, #ffffff);
+    font-family: Tahoma, Arial;
+    direction: rtl;
+    text-align: center;
+}
+
+
+
+.splash-img {
+    width: 200px;          /* حجم كبير */
+    height: 200px;
+    border-radius: 50%;    /* لو عايزها مدورة، لو مربعة: border-radius: 0 */
+    object-fit: cover;     /* لتعبئة المساحة بدون تشويه */
+    border: 3px solid #fff; /* إطار أبيض */
+    margin-bottom: 20px;    /* مسافة بين الصورة والنص */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;     /* لتوسيط الصورة */
+}
+
+
+
+#splash {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #000000d8;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.card {
+    background: #ffffff;
+    max-width: 500px;
+    margin: 60px auto;
+    padding: 35px 25px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.center-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 2px solid #fff;
+    margin: 20px auto;
+    display: block;
+}
+
+
+
+h1 { color: #2e7d32; }
+h2 { color: #555; }
+h3 { color: #1b5e20; font-size: 22px; }
+
+.line { width: 60px; height: 3px; background: #66bb6a; margin: 15px auto; border-radius: 5px; }
+
+.dua { font-size: 17px; line-height: 1.9; color: #333; margin: 25px 0; }
+
+.audio { margin-top: 25px; }
+
+.tasbeeh { margin-top: 25px; }
+.tasbeeh button { padding: 8px 15px; margin: 5px; border-radius: 8px; border: none; background: #2e7d32; color: white; cursor: pointer; }
+.tasbeeh button:hover { background: #1b5e20; }
+
+.adhkar { margin-top: 25px; background: #eef3f7; padding: 15px; border-radius: 10px; }
+
+footer { margin-top: 25px; font-size: 14px; color: #888; }
