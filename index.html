@@ -73,26 +73,35 @@
         إنك على كل شيء قدير، وبالإجابة جدير، وصلى الله وسلم وبارك على سيدنا محمد وعلى آله وصحبه أجمعين.
     </p>
 
-    <button onclick="playQuran()" style="
-    padding:15px 25px;
-    font-size:18px;
+    <button id="playBtn" style="
+    width:100%;
+    padding:18px;
+    font-size:20px;
     background:#1e7f4f;
     color:white;
     border:none;
-    border-radius:8px;
+    border-radius:10px;
   ">
- استمع إلى القرآن الكريم 🤍 ▶️
+  تشغيل القرآن ▶️
   </button>
   
-  <audio id="quranAudio">
+  <audio id="quranAudio" preload="none">
     <source src="quran.mp3" type="audio/mpeg">
   </audio>
   
   <script>
-  function playQuran() {
-    document.getElementById("quranAudio").play();
-  }
+    const btn = document.getElementById("playBtn");
+    const audio = document.getElementById("quranAudio");
+  
+    btn.addEventListener("click", () => {
+      audio.play().catch(err => {
+        alert("اضغط تشغيل مرة تانية");
+      });
+    });
   </script>
+
+<source src="audio/quran.mp3" type="audio/mpeg">
+
 
     <img src="quran.png" alt="صورة مصحف" class="center-img">
 
