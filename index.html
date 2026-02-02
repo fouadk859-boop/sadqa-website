@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
+   
+   
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   
     <meta charset="UTF-8">
     <title>صدقة جارية على روح السيد عبداللطيف السيد</title>
 
@@ -36,6 +42,15 @@
     <p>🤍 اللهم اغفر له وارحمه 🤍</p>
 </div>
 
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+
 <!-- المحتوى الرئيسي -->
 <div class="card" id="mainContent" style="display:none;">
     <h1>صدقة جارية</h1>
@@ -58,14 +73,26 @@
         إنك على كل شيء قدير، وبالإجابة جدير، وصلى الله وسلم وبارك على سيدنا محمد وعلى آله وصحبه أجمعين.
     </p>
 
-    <!-- تشغيل قرآن -->
-    <div class="audio">
-        <p>استمع إلى القرآن الكريم 🤍</p>
-        <audio controls>
-            <source src="quran.mp3" type="audio/mpeg">
-            متصفحك لا يدعم تشغيل الصوت
-        </audio>
-    </div>
+    <button onclick="playQuran()" style="
+    padding:15px 25px;
+    font-size:18px;
+    background:#1e7f4f;
+    color:white;
+    border:none;
+    border-radius:8px;
+  ">
+ استمع إلى القرآن الكريم 🤍 ▶️
+  </button>
+  
+  <audio id="quranAudio">
+    <source src="quran.mp3" type="audio/mpeg">
+  </audio>
+  
+  <script>
+  function playQuran() {
+    document.getElementById("quranAudio").play();
+  }
+  </script>
 
     <img src="quran.png" alt="صورة مصحف" class="center-img">
 

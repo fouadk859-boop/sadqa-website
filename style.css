@@ -5,9 +5,12 @@ body {
     font-family: Tahoma, Arial;
     direction: rtl;
     text-align: center;
+    width: 100%;
 }
 
-
+.container {
+    width: 100%;
+  }
 
 .splash-img {
     width: 200px;          /* حجم كبير */
